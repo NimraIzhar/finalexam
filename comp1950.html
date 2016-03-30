@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="if:Show Twitter" description="0">
+    <meta name="text:Twitter Handle" description="">
+    <meta name="image:Mytwitter" content="http://static.tumblr.com/fpgkb1r/uXHo3cde5/twitter.png"/>
+    <meta name="text:Youtube link" content=""/>
+    <meta name="image:Youtube" content="http://static.tumblr.com/fpgkb1r/6Buo4rtcn/youtubelogo.png"/>
+
+    <meta name="text:Facebook username" content=""/>
+    <meta name="image:facebook" content="http://static.tumblr.com/fpgkb1r/Bsvo3dc4s/facebook.jpg"/>
+    <title>Comp 1950 Blog</title>
+    <link rel="stylesheet" href="http://static.tumblr.com/fpgkb1r/A0Ho4rura/grid.css">
+    <!-- link rel="stylesheet" href="http://static.tumblr.com/fpgkb1r/DkMo4s3yn/style.css" -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   
+
+<style>
+.container {
+  width:100%;
+  max-width: 100%;
+}
+
+
+    * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+body{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: -webkit-left;
+    color:black;
+    font-size: 16px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+h4{
+  text-align: center;
+  color:rgb(22, 158, 141);
+  font-size:1.5em;
+  margin: 10px 0;
+}
+
+img.profile{
+
+    width: 128px;
+    height: 128px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    background-color: skyblue;
+    back
+}
+
+.headContainer{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 350px;
+    background-color:rgb(22, 158, 141);
+
+}
+
+div.description{
+    position: relative;
+    margin-top: 100px;
+}
+
+div.description h2{
+    width: 100%;
+    font-size: 1.2em;
+    margin:0;
+    padding:0;
+}
+
+div.postContainer{
+
+    position: relative;
+    margin: 0 auto;
+    
+
+}
+
+
+.topHeader{
+    position: relative;
+    top: 280px;
+}
+
+
+.topHeader nav{
+/*
+    position: absolute;
+    left: 2%;
+    top: 28%;
+*/
+  margin-top:35px;  
+}
+
+.topHeader nav>ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+        
+}
+
+.topHeader nav>ul>li{
+    display: inline;
+    padding-right: 10px;
+}
+
+.topHeader nav>ul>li:last-child{
+    padding-right: 0;
+}
+
+.topHeader nav>ul>li>a{
+    color: wheat;
+    font-size:1.2em;
+}
+
+
+
+.profile-pic { margin-top:-70px;text-align:center; }
+
+
+
+.info {
+    margin-top: 10px;
+}
+
+.pagination{
+    width: 100%;
+    background-color: rgb(22, 158, 141);
+    color: white;
+}
+
+.post{
+    padding: 25px 0;
+    font-size: 1.2em;
+    color: black;
+}
+.name{
+    display:block;
+    width: 73%;
+    font-size: 1.5em;
+    color: #4B4A4A;
+    position: relative;
+
+}
+
+.desc{
+    display: block;
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.14);
+    padding: 10px;
+    text-align: -webkit-left;
+    width: 73%;
+
+}
+
+
+a{
+    text-decoration:none;
+    color: white;
+    font-size: 1.4em;
+}
+button.btnLink{
+    width:190px;
+    height: 35px;
+    margin-top:5px;
+}
+
+nav.social ul{
+    float:right;
+    padding: 0;
+    list-style: none;
+}
+
+
+nav.social ul li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+nav.social ul li a{
+    color: wheat;
+}
+
+
+div.socialfooter{
+    position: absolute;
+    text-align: left;
+}
+
+
+div.socialfooter >ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+div.socialfooter a {
+    text-decoration:none;
+    color: black;
+    font-size: 1em;
+}
+
+div.socialfooter ul li{
+    display: inline-block;
+    padding-right: 2px;
+}
+
+div.socialfooter ul li a{
+    color: black;
+}
+footer{
+    background-color: black;
+   
+}
+
+footer li {
+	margin-bottom: 1rem;
+    display: inline-block;
+    padding-right: 25px;
+	
+}
+footer ul, ol{
+	padding-left: 0;
+    margin-top: 0;
+    list-style: none;
+	
+}
+footer img {
+	
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    
+}
+
+
+div.burgerMenu{
+    position: absolute;
+    top: 18%;
+    left: 2%;
+}
+
+div.burgerMenu .fa-bars:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+@media only screen and (max-width: 1030px){
+    .topHeader nav { display:none; }
+    .topHeader nav.mainNav {
+        position: absolute;
+        top: 10px;
+        left: -300px;
+        padding:5px 10px 0;
+        background-color: rgba(45, 149, 173, 0.9);
+        z-index:1;
+    }
+    .topHeader nav.mainNav>ul>li{
+        display: block;
+        margin:0;
+        text-align: left;
+        border-bottom:1px solid #FFF;
+    }
+    .topHeader nav.mainNav>ul>li:last-child{
+        border:0;
+    }
+
+    .topHeader nav.mainNav>ul>li a{
+        color: #383736;
+    }
+    
+    nav.social{
+        display: none;
+    }
+    
+    
+    header.topHeader div.burgerMenu{
+        display: block;
+    }
+    
+
+}
+
+
+@media only screen and (min-width: 1031px){
+    
+    nav.social{
+        display: block;
+    }
+    
+    header.topHeader>nav.mainNav{
+        display: block;
+    }
+    
+    header.topHeader div.burgerMenu{
+        display: none;
+    }
+    
+
+}
+
+
+
+    
+    
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="row"> 
+        <div class="headContainer">
+            <header class="topHeader">
+                   
+            <div class="six columns">
+                {block:HasPages}
+                <div class="burgerMenu">
+                    <i class="fa fa-bars fa-3x"></i>      
+                </div>
+                <nav class="mainNav">
+                   <ul>
+                        <li><a href="/">Home</a></li>
+                        {block:pages}
+                        <li><a href={URL}>{Label}</a></li>
+                        {/block:pages}
+                   </ul>
+  
+                </nav>
+
+                {/block:HasPages}
+            </div>
+
+            <div class="six columns">
+                <nav  class="social">
+                    <ul>{block:ifShowTwitter}
+                        <li><a href="https://twitter.com/{text:Twitter Handle}" target="_blank">Twitter</a></li>{/block:ifShowTwitter}
+                        {block:ifFacebookusername}
+                        <li><a href="https://www.facebook.com/{text:Facebook username}" target="_blank">Facebook</a></li>{/block:ifFacebookusername}
+                        {block:ifYoutubelink}
+                        <li><a href="https://www.youtube.com/{text:Youtube Link}" target="_blank">Youtube</a></li>{/block:ifYoutubelink}
+                    </ul>
+                </nav>
+            </div> 
+
+            </header>
+            
+            </div>
+        </div><!--end of header row-->
+       
+<div class="row">
+    <div class="twelve columns profile-pic">
+                <div>
+                    <img src="{PortraitURL-128}" alt="Comp 1950 Logo" class="profile">
+                </div>
+                <h4>{Title}</h4>
+    </div>
+</div>
+        
+       <div class="row description">
+            {block:Description}
+                <h2>{Description}</h2>
+            {/block:Description} 
+        </div><!--end of course description row-->
+    
+    <!--Lecture Content-->
+             <div class="contaienr">
+                <div class="wrapper row">
+                    {block:Posts} 
+                        <div class="postContainer">
+
+
+                <div class="{PostType} post" id={PostID}>
+                    
+                    
+                    <div class="three columns">
+                    <h4>&nbsp</h4>
+                    {block:Date}
+                        Date: {Month}.{DayOfMonth},{Year}
+                        <br>
+                        by: {PostAuthorName}
+                        <br>
+                    {/block:Date}
+                    {block:HasTags} 
+                        {block:Tags} 
+                            
+                            <strong>#Tags: {Tag}</strong>
+                        {/block:Tags}
+                     <br>   
+                    {/block:HasTags}
+                    <br>
+                    
+                    
+                    
+                    </div><!--enf of basic info about lecture -->
+                 <div class="nine columns">   
+                    {block:text}
+                    <h4>{Title}</h4>
+                    {Body}
+                    {/block:text}
+
+                        {block:Video} 
+                            {VideoEmbed-500}
+                        {/block:Video}
+                        
+                        {block:Photo}  
+                    <strong>{Caption}</strong>
+                    <img src="{PhotoURL-500}" alt="" ><br>
+                    <button class="btnLink"><a href="{Permalink}" >View the post</a></button>
+ 
+                    {/block:Photo}
+                    
+                    {block:Link}
+
+                        <img src="{Thumbnail}" alt="">    
+                        <div class="name">{Name}</div>
+                        <div class="desc">{block:Excerpt}{Excerpt} {/block:Excerpt}</div>
+                        <button class="btnLink"><a href="{URL}" target="_blank">Read more ...</a></button>
+                        <button class="btnLink"><a href="{Permalink}" >View the post </a></button>
+
+                    {/block:Link}
+                    
+                </div><!--end of main content of lecture-->
+
+                </div>
+
+            </div>
+            {/block:Posts}  
+        </div>
+        <!--end of Lecture content-->   
+                 
+                 
+    <div class="row">  
+        <div class="postPages">
+
+            {block:Pagination}
+            <div class="pagination row">
+
+            {block:PreviousPage}
+            <div class="prev three columns">
+              <a href="{PreviousPage}">Go Previous</a>
+            </div>
+            {/block:PreviousPage}
+
+
+            <div class="numbers six columns">Current page: {CurrentPage}</div>
+
+            {block:NextPage}
+            <div class="next three columns">
+              <a href="{NextPage}">Go Next</a>
+            </div>
+            {/block:NextPage}
+
+
+            </div>
+
+            {/block:Pagination}
+        </div>
+    </div>         
+           
+            <footer class="row" >
+                 <div class="four columns" >
+                 <h4>Copyright © Lets Learn How to manage Content {CopyrightYears}. </h4>
+                  </div>
+                  <div class="four columns" >
+                   <h4> ||  &nbsp;  Course COMP1950  &nbsp;    ||  </h4> 
+                  </div>
+                <div class="four columns" >
+                   
+                   <h4>Social Media</h4>
+                   
+                        <ul>{block:ifShowTwitter}
+                        <li><a href="https://twitter.com/{text:Twitter Handle}" target="_blank"><img src="{image:Mytwitter}" alt="Twitter"></a></li>{/block:ifShowTwitter}
+                        {block:ifFacebookusername}
+                        <li><a href="https://www.facebook.com/{text:Facebook username}" target="_blank"><img src="{image:facebook}" alt="Facebook"></a></li>{/block:ifFacebookusername}
+                        {block:ifYoutubelink}
+                        <li><a href="https://www.youtube.com/{text:Youtube Link}" target="_blank"><img src="http://static.tumblr.com/fpgkb1r/6Buo4rtcn/youtubelogo.png" alt="Youtube"></a></li>{/block:ifYoutubelink}
+                        </ul>
+                        
+                    
+                  </div>
+            </footer>   
+
+    </div>  
+    
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>
+   
+    $('header.topHeader div.burgerMenu').on('click',function(){
+        
+        
+        var $navPos = $('nav.mainNav').css('left');
+        
+        if (parseInt($navPos) < 2){
+            
+            $('nav.mainNav').fadeIn(300).animate({
+                left : '2%'
+            },400); 
+        }else{
+            $('nav.mainNav').fadeIn(300).animate({
+                left : -350
+            },400);
+        }
+    });
+
+    
+</script>
+
+<</div><!-- /.container -->
+</body>
+</html>
